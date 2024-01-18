@@ -18,16 +18,19 @@ object DatabaseFactory {
 
         }
     }
-
+// ta conectado a elephant sql lo que etsa en comentario son los datos de la base de datos en local para pruebas
     private fun createHikariDatasource(): HikariDataSource{
     val driverClass = "org.postgresql.Driver"
-    val jdbcUrl = "jdbc:postgresql://localhost:5432/petCare"
+    //val jdbcUrl = "jdbc:postgresql://localhost:5432/petCare"
+        val jdbcUrl = "jdbc:postgresql://flora.db.elephantsql.com:5432/egkgayxz"
 
     val hikariConfig = HikariConfig().apply {
         driverClassName = driverClass
         setJdbcUrl(jdbcUrl)
-        username = "postgres"
-        password = "6ftxkyetyxpr"
+        //username = "postgres"
+        username = "egkgayxz"
+        //password = "6ftxkyetyxpr"
+        password = "DaNhYB_qDELGkXu1x9Dnm87qYIrYWAxH"
         maximumPoolSize = 3
         isAutoCommit = false
         transactionIsolation = "TRANSACTION_REPEATABLE_READ"
