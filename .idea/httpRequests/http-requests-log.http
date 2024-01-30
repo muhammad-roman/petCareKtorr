@@ -1,0 +1,111 @@
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 70
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "carlos.olivera.7e6@itb.cat",
+"password": "carlossssword"
+}
+
+<> 2024-01-30T160348.403.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 72
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "carlos.olivera.7e6@itb.cat",
+"password": "carlospasssword"
+}
+
+<> 2024-01-30T160314.200.json
+
+###
+
+GET http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 72
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "carlos.olivera.7e6@itb.cat",
+"password": "carlospasssword"
+}
+
+###
+
+POST http://localhost:8080/signup
+Content-Type: application/json
+Content-Length: 99
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+   "name": "carlos",
+   "email": "carlos.olivera.7e6@itb.cat",
+   "password": "carlospasssword"
+}
+
+<> 2024-01-30T160232.409.json
+
+###
+
+GET http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 72
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "carlos.olivera.7e6@itb.cat",
+"password": "carlospasssword"
+}
+
+###
+
+POST http://localhost:8080/signup
+Content-Type: application/json
+Content-Length: 99
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+   "name": "carlos",
+   "email": "carlos.olivera.7e6@itb.cat",
+   "password": "carlospasssword"
+}
+
+<> 2024-01-30T160059.409.json
+
+###
+
+POST http://localhost:8080/signup
+Content-Type: application/json
+Content-Length: 99
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+   "name": "carlos",
+   "email": "carlos.olivera.7e6@itb.cat",
+   "password": "carlospasssword"
+}
+
+<> 2024-01-30T155918.200.json
+
+###
+
