@@ -1,4 +1,4 @@
-                                                 POST http://localhost:8080/signup
+POST http://localhost:8080/signup
 Content-Type: application/json
 
 {
@@ -15,3 +15,24 @@ Content-Type: application/json
 "email": "carlos.olivera.7e6@itb.cat",
 "password": "carlospasssword"
 }
+
+###
+POST http://localhost:8080/posts
+Content-Type: application/json
+
+{
+"owner": "",
+"var reciver": "",
+"var offers":  "" ,
+"title": "Nuevo post",
+"postPhoto": "https://example.com/photo.jpg",
+"description": "Descripción del nuevo post",
+"serviceType": "Tipo de servicio",
+"serviceTime": "Tiempo de servicio",
+"postDate": "2024-02-16",
+"reward": "Recompensa",
+"location": "Ubicación del post"
+}
+
+###
+GET http://localhost:8080/posts

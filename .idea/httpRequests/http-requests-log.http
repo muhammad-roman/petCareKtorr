@@ -1,3 +1,313 @@
+POST http://localhost:8080/posts
+Content-Type: application/json
+Content-Length: 326
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": "",
+"var reciver": "",
+"var offers":  "" ,
+"title": "Nuevo post",
+"postPhoto": "https://example.com/photo.jpg",
+"description": "Descripción del nuevo post",
+"serviceType": "Tipo de servicio",
+"serviceTime": "Tiempo de servicio",
+"postDate": "2024-02-16",
+"reward": "Recompensa",
+"location": "Ubicación del post"
+}
+
+<> 2024-02-19T163632.200.json
+
+###
+
+POST http://localhost:8080/posts
+Content-Type: application/json
+Content-Length: 328
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": "",
+"var reciver": "",
+"var offers":  "" ,
+"title": "Nuevo post",
+"postPhoto": "https://example.com/photo.jpg",
+"description": "Descripción del nuevo post",
+"serviceType": "Tipo de servicio",
+"serviceTime": "Tiempo de servicio",
+"postDate": "2024-02-16",
+"reward": "Recompensa",
+"location": "Ubicación del post"
+}
+
+<> 2024-02-19T163627.200.json
+
+###
+
+POST http://localhost:8080/posts
+Content-Type: application/json
+Content-Length: 274
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"title": "Nuevo post",
+"postPhoto": "https://example.com/photo.jpg",
+"description": "Descripción del nuevo post",
+"serviceType": "Tipo de servicio",
+"serviceTime": "Tiempo de servicio",
+"postDate": "2024-02-16",
+"reward": "Recompensa",
+"location": "Ubicación del post"
+}
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 72
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "carlos.olivera.7e6@itb.cat",
+"password": "carlospasssword"
+}
+
+<> 2024-02-16T164357.200.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 72
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "carlos.olivera.7e6@itb.cat",
+"password": "carlospasssword"
+}
+
+<> 2024-02-16T164352.200.json
+
+###
+
+POST http://localhost:8080/signup
+Content-Type: application/json
+Content-Length: 99
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+   "name": "carlos",
+   "email": "carlos.olivera.7e6@itb.cat",
+   "password": "carlospasssword"
+}
+
+<> 2024-02-16T164349.409.json
+
+###
+
+GET http://localhost:8080/posts
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/posts
+Content-Type: application/json
+Content-Length: 274
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"title": "Nuevo post",
+"postPhoto": "https://example.com/photo.jpg",
+"description": "Descripción del nuevo post",
+"serviceType": "Tipo de servicio",
+"serviceTime": "Tiempo de servicio",
+"postDate": "2024-02-16",
+"reward": "Recompensa",
+"location": "Ubicación del post"
+}
+
+###
+
+POST http://localhost:8080/posts
+Content-Type: application/json
+Content-Length: 372
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "postId": 1,
+  "owner": "Propietario",
+  "receiver": "Receptor",
+  "offers": [],
+  "title": "Título del post",
+  "postPhoto": "https://ejemplo.com/foto.jpg",
+  "description": "Descripción del post",
+  "serviceType": "Tipo de servicio",
+  "serviceTime": "Tiempo de servicio",
+  "postDate": "2024-02-16",
+  "reward": "Recompensa",
+  "location": "Ubicación del post"
+}
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 72
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "carlos.olivera.7e6@itb.cat",
+"password": "carlospasssword"
+}
+
+<> 2024-02-16T163148.200.json
+
+###
+
+POST http://localhost:8080/signup
+Content-Type: application/json
+Content-Length: 99
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+   "name": "carlos",
+   "email": "carlos.olivera.7e6@itb.cat",
+   "password": "carlospasssword"
+}
+
+<> 2024-02-16T163143.200.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 72
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "carlos.olivera.7e6@itb.cat",
+"password": "carlospasssword"
+}
+
+<> 2024-02-16T163020.404.json
+
+###
+
+POST http://localhost:8080/posts
+Content-Type: application/json
+Content-Length: 372
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "postId": 1,
+  "owner": "Propietario",
+  "receiver": "Receptor",
+  "offers": [],
+  "title": "Título del post",
+  "postPhoto": "https://ejemplo.com/foto.jpg",
+  "description": "Descripción del post",
+  "serviceType": "Tipo de servicio",
+  "serviceTime": "Tiempo de servicio",
+  "postDate": "2024-02-16",
+  "reward": "Recompensa",
+  "location": "Ubicación del post"
+}
+
+###
+
+GET http://localhost:8080/posts
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/posts
+Content-Type: application/json
+Content-Length: 274
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"title": "Nuevo post",
+"postPhoto": "https://example.com/photo.jpg",
+"description": "Descripción del nuevo post",
+"serviceType": "Tipo de servicio",
+"serviceTime": "Tiempo de servicio",
+"postDate": "2024-02-16",
+"reward": "Recompensa",
+"location": "Ubicación del post"
+}
+
+###
+
+POST http://localhost:8080/posts
+Content-Type: application/json
+Content-Length: 274
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"title": "Nuevo post",
+"postPhoto": "https://example.com/photo.jpg",
+"description": "Descripción del nuevo post",
+"serviceType": "Tipo de servicio",
+"serviceTime": "Tiempo de servicio",
+"postDate": "2024-02-16",
+"reward": "Recompensa",
+"location": "Ubicación del post"
+}
+
+###
+
+POST http://localhost:8080/posts
+Content-Type: application/json
+Content-Length: 274
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"title": "Nuevo post",
+"postPhoto": "https://example.com/photo.jpg",
+"description": "Descripción del nuevo post",
+"serviceType": "Tipo de servicio",
+"serviceTime": "Tiempo de servicio",
+"postDate": "2024-02-16",
+"reward": "Recompensa",
+"location": "Ubicación del post"
+}
+
+###
+
 POST http://localhost:8080/login
 Content-Type: application/json
 Content-Length: 72

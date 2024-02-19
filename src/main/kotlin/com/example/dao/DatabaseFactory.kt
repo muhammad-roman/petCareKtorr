@@ -1,5 +1,6 @@
 package com.example.dao
 
+import com.example.model.PostRow
 import com.example.model.UserRow
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
@@ -15,7 +16,7 @@ object DatabaseFactory {
         Database.connect(createHikariDatasource())
         transaction {
             SchemaUtils.create(UserRow)
-
+            SchemaUtils.create(PostRow)
         }
     }
 // ta conectado a elephant sql lo que etsa en comentario son los datos de la base de datos en local para pruebas

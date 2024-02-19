@@ -1,5 +1,6 @@
 package com.example.model
 
+import kotlinx.serialization.Serializable
 import org.jetbrains.exposed.sql.Table
 
 object UserRow: Table(name = "users"){
@@ -17,6 +18,7 @@ object UserRow: Table(name = "users"){
 
 }
 
+@Serializable
 data class User(
     val id: Int,
     val name: String,
