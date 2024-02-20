@@ -1,3 +1,12 @@
+GET http://localhost:8080/posts
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-19T163939.200.json
+
+###
+
 POST http://localhost:8080/posts
 Content-Type: application/json
 Content-Length: 326

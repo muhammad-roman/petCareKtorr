@@ -4,8 +4,8 @@ import org.jetbrains.exposed.sql.Table
 
 object PostRow: Table(name = "posts"){
     val postId = integer(name = "post_id").autoIncrement()
-    val owner = varchar(name = "owner_name", length = 250)
-    val reciver = varchar(name = "reciver_name", length = 250)
+    val owner = integer(name = "owner_id")
+    val reciver = integer(name = "reciver_id")
     val offers = varchar(name = "offer_name", length = 250)
     val tittle = varchar(name = "tittle_post", length = 30)
     val postPhoto = varchar(name = "photo_post", length = 50)
@@ -26,8 +26,8 @@ object PostRow: Table(name = "posts"){
 @Serializable
 data class Post(
     var postId: Int = 0,
-    var owner: String = "",
-    var reciver: String = "",
+    var owner: Int = 0,
+    var reciver: Int = 0,
     var offers: String = "",
     var tittle: String = "",
     var postPhoto: String = "",

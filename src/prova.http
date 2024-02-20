@@ -36,3 +36,21 @@ Content-Type: application/json
 
 ###
 GET http://localhost:8080/posts
+
+###
+PUT http://localhost:8080/posts
+Content-Type: application/json
+
+{
+  "owner": "Carlos",
+  "var reciver": "",
+  "var offers":  "" ,
+  "title": "Nuevo post",
+  "postPhoto": "https://example.com/photo.jpg",
+  "description": "Descripción del nuevo post",
+  "serviceType": "Tipo de servicio",
+  "serviceTime": "Tiempo de servicio",
+  "postDate": "2024-02-16",
+  "reward": "Recompensa",
+  "location": "Ubicación del post"
+}

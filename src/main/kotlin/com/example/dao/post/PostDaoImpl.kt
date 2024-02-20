@@ -41,8 +41,8 @@ class PostDaoImpl: PostDao {
     }
 
     override suspend fun addNewPost(
-        owner: String,
-        reciver: String,
+        owner: Int,
+        reciver: Int,
         offers: String,
         tittle: String,
         postPhoto: String,
@@ -103,7 +103,7 @@ class PostDaoImpl: PostDao {
 val dao: PostDao = PostDaoImpl().apply {
     runBlocking {
         if(allPosts().isEmpty()) {
-            addNewPost("Mike","Samantha","14","Post de relleno", "foto_prueba", "No descripcion...", "Sin servicio", "0h", "00/00/0000","1000","Barcelona" )
+            addNewPost(1,2,"14","Post de relleno", "foto_prueba", "No descripcion...", "Sin servicio", "0h", "00/00/0000","1000","Barcelona" )
         }
     }
 }
