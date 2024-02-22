@@ -66,6 +66,80 @@ fun Routing.postRoute(dao: PostDao) {
         }
 
         post {
+            val data = call.receiveMultipart()
+            var ofertas: Post? = null
+            var fileName = ""
+            val gson = Gson()
+
+            var owner = 0
+            var reciver = 0
+            var offers = ""
+            var tittle = ""
+            var description = ""
+            var serviceType = ""
+            var serviceTime = ""
+            var postDate = ""
+            var reward = ""
+            var location = ""
+
+            data.forEachPart { part ->
+                when (part) {
+                    is PartData.FormItem -> {
+                        if (part.name == "post_data") {
+                            ofertas = gson.fromJson(part.value, Post::class.java)
+                        } else {
+                            when (part.name) {
+                                "owner" -> owner = part.value.toInt()
+                                "reciver" -> reciver = part.value.toInt()
+                                "offers" -> offers = part.value
+                                "tittle" -> tittle = part.value
+                                "description" -> description = part.value
+                                "serviceType" -> serviceType = part.value
+                                "serviceTime" -> serviceTime = part.value
+                                "postDate" -> postDate = part.value
+                                "reward" -> reward = part.value
+                                "location" -> location = part.value
+                            }
+
+
+                        }
+
+                    }
+
+                    is PartData.FileItem -> {
+                        fileName = part.originalFileName as String
+                        var fileBytes = part.streamProvider().readBytes()
+                        File("./src/main/resources/imagenes/$fileName").writeBytes(fileBytes)
+                    }
+
+                    else -> {}
+                }
+            }
+            ofertas = gson.fromJson(
+                """{"owner":${owner},"reciver":${reciver},"offers":${offers},"tittle":${tittle},"description":${description},"serviceType":${serviceType},"serviceTime":${serviceTime},"postDate":${postDate},"reward":${reward}, "location":${location}}""",
+                Post::class.java
+            )
+
+/*
+            val tesoroToPost = ofertas?.let { it1 ->
+                dao.addNewPost(
+                    it1.tittle.toInt(),
+                    it.descripcion,
+                    ofertas!!.latitud,
+                    ofertas!!.longitud,
+                    ofertas!!.valoracion,
+                    fileName
+                )
+            }
+            call.respondRedirect("/tesoros/${tesoroToPost?.postId}")
+            
+ */
+        }
+
+
+        /*
+
+        post {
             val post = try {
                 call.receive<Post>()
             } catch (e: SerializationException) {
@@ -91,6 +165,8 @@ fun Routing.postRoute(dao: PostDao) {
                 call.respond(addedPost)
             }
         }
+
+         */
 
         put("/{postId}") {
             val postId = call.parameters["postId"]?.toIntOrNull()
