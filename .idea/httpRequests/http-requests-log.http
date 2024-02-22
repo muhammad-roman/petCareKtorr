@@ -1,3 +1,362 @@
+PUT http://192.168.1.68:8080/posts/4
+Content-Type: application/json
+Content-Length: 305
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "owner": 0,
+  "reciver": 1,
+  "offers":  "14" ,
+  "tittle": "Gato",
+  "postPhoto": "https://acortar.link/g7gi5i",
+  "description": "Que alguien me cuide al gato",
+  "serviceType": "Paseo",
+  "serviceTime": "00:00 - 10:00",
+  "postDate": "2024-02-16",
+  "reward": "1000€",
+  "location": "Barcelona"
+}
+
+<> 2024-02-22T011424.200.txt
+
+###
+
+PUT http://192.168.1.68:8080/posts/4
+Content-Type: application/json
+Content-Length: 306
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "owner": 0,
+  "reciver": 1,
+  "offers":  "14" ,
+  "tittle": "Gato",
+  "postPhoto": "https://acortar.link/3V09Vb",
+  "description": "Que alguien me cuide al perro",
+  "serviceType": "Paseo",
+  "serviceTime": "00:00 - 10:00",
+  "postDate": "2024-02-16",
+  "reward": "1000€",
+  "location": "Barcelona"
+}
+
+<> 2024-02-22T011233.200.txt
+
+###
+
+POST http://192.168.1.68:8080/posts
+Content-Type: application/json
+Content-Length: 291
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"tittle": "Perro2",
+"postPhoto": "https://acortar.link/TYEvTw",
+"description": "Que alguien me cuide al perro",
+"serviceType": "Paseo",
+"serviceTime": "00:00 - 10:00",
+"postDate": "2024-02-16",
+"reward": "1000€",
+"location": "Barcelona"
+}
+
+<> 2024-02-22T011101.200.json
+
+###
+
+POST http://192.168.1.68:8080/posts
+Content-Type: application/json
+Content-Length: 422
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"tittle": "Perro2",
+"postPhoto": "https://static.vecteezy.com/system/resources/thumbnails/009/551/676/small/shy-dog-logo-illustration-depicting-shy-dog-suitable-for-pet-company-free-vector.jpg",
+"description": "Que alguien me cuide al perro",
+"serviceType": "Paseo",
+"serviceTime": "00:00 - 10:00",
+"postDate": "2024-02-16",
+"reward": "1000€",
+"location": "Barcelona"
+}
+
+###
+
+PUT http://192.168.1.68:8080/posts/4
+Content-Type: application/json
+Content-Length: 437
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "owner": 0,
+  "reciver": 1,
+  "offers":  "14" ,
+  "tittle": "Gato",
+  "postPhoto": "https://static.vecteezy.com/system/resources/thumbnails/009/551/676/small/shy-dog-logo-illustration-depicting-shy-dog-suitable-for-pet-company-free-vector.jpg",
+  "description": "Que alguien me cuide al perro",
+  "serviceType": "Paseo",
+  "serviceTime": "00:00 - 10:00",
+  "postDate": "2024-02-16",
+  "reward": "1000€",
+  "location": "Barcelona"
+}
+
+###
+
+PUT http://192.168.1.68:8080/posts/4
+Content-Type: application/json
+Content-Length: 308
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "owner": 0,
+  "reciver": 1,
+  "offers":  "14" ,
+  "tittle": "Gato",
+  "postPhoto": "https://example.com/photo.jpg",
+  "description": "Que alguien me cuide al perro",
+  "serviceType": "Paseo",
+  "serviceTime": "00:00 - 10:00",
+  "postDate": "2024-02-16",
+  "reward": "1000€",
+  "location": "Barcelona"
+}
+
+<> 2024-02-22T010723.200.txt
+
+###
+
+PUT http://192.168.1.68:8080/posts/4
+Content-Type: application/json
+Content-Length: 437
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "owner": 0,
+  "reciver": 1,
+  "offers":  "14" ,
+  "tittle": "Gato",
+  "postPhoto": "https://static.vecteezy.com/system/resources/thumbnails/009/551/676/small/shy-dog-logo-illustration-depicting-shy-dog-suitable-for-pet-company-free-vector.jpg",
+  "description": "Que alguien me cuide al perro",
+  "serviceType": "Paseo",
+  "serviceTime": "00:00 - 10:00",
+  "postDate": "2024-02-16",
+  "reward": "1000€",
+  "location": "Barcelona"
+}
+
+###
+
+POST http://192.168.1.68:8080/posts
+Content-Type: application/json
+Content-Length: 422
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"tittle": "Perro2",
+"postPhoto": "https://static.vecteezy.com/system/resources/thumbnails/009/551/676/small/shy-dog-logo-illustration-depicting-shy-dog-suitable-for-pet-company-free-vector.jpg",
+"description": "Que alguien me cuide al perro",
+"serviceType": "Paseo",
+"serviceTime": "00:00 - 10:00",
+"postDate": "2024-02-16",
+"reward": "1000€",
+"location": "Barcelona"
+}
+
+###
+
+POST http://192.168.1.68:8080/posts
+Content-Type: application/json
+Content-Length: 422
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"tittle": "Perro2",
+"postPhoto": "https://static.vecteezy.com/system/resources/thumbnails/009/551/676/small/shy-dog-logo-illustration-depicting-shy-dog-suitable-for-pet-company-free-vector.jpg",
+"description": "Que alguien me cuide al perro",
+"serviceType": "Paseo",
+"serviceTime": "00:00 - 10:00",
+"postDate": "2024-02-16",
+"reward": "1000€",
+"location": "Barcelona"
+}
+
+###
+
+PUT http://192.168.1.68:8080/posts/4
+Content-Type: application/json
+Content-Length: 308
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "owner": 0,
+  "reciver": 1,
+  "offers":  "14" ,
+  "tittle": "Gato",
+  "postPhoto": "https://example.com/photo.jpg",
+  "description": "Que alguien me cuide al perro",
+  "serviceType": "Paseo",
+  "serviceTime": "00:00 - 10:00",
+  "postDate": "2024-02-16",
+  "reward": "1000€",
+  "location": "Barcelona"
+}
+
+<> 2024-02-22T010536.200.txt
+
+###
+
+POST http://192.168.1.68:8080/posts
+Content-Type: application/json
+Content-Length: 422
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"tittle": "Perro2",
+"postPhoto": "https://static.vecteezy.com/system/resources/thumbnails/009/551/676/small/shy-dog-logo-illustration-depicting-shy-dog-suitable-for-pet-company-free-vector.jpg",
+"description": "Que alguien me cuide al perro",
+"serviceType": "Paseo",
+"serviceTime": "00:00 - 10:00",
+"postDate": "2024-02-16",
+"reward": "1000€",
+"location": "Barcelona"
+}
+
+###
+
+POST http://192.168.1.68:8080/posts
+Content-Type: application/json
+Content-Length: 421
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"tittle": "Perro2",
+"postPhoto": "https://static.vecteezy.com/system/resources/thumbnails/009/551/676/small/shy-dog-logo-illustration-depicting-shy-dog-suitable-for-pet-company-free-vector.jpg",
+"description": "Que alguien me cuide al perro",
+"serviceType": "Paseo",
+"serviceTime": "00:00 - 10:00",
+"postDate": "2024-02-16",
+"reward": "1000€",
+"location": "Badalona"
+}
+
+###
+
+POST http://192.168.1.68:8080/posts
+Content-Type: application/json
+Content-Length: 292
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"tittle": "Perro1",
+"postPhoto": "https://example.com/photo.jpg",
+"description": "Que alguien me cuide al perro",
+"serviceType": "Paseo",
+"serviceTime": "00:00 - 10:00",
+"postDate": "2024-02-16",
+"reward": "1000€",
+"location": "Badalona"
+}
+
+<> 2024-02-21T221923.200.json
+
+###
+
+POST http://192.168.1.68:8080/posts
+Content-Type: application/json
+Content-Length: 290
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"title": "Perro",
+"postPhoto": "https://example.com/photo.jpg",
+"description": "Que alguien me cuide al perro",
+"serviceType": "Paseo",
+"serviceTime": "00:00 - 10:00",
+"postDate": "2024-02-16",
+"reward": "1000€",
+"location": "Badalona"
+}
+
+<> 2024-02-21T213001.200.json
+
+###
+
+POST http://192.168.1.68:8080/posts
+Content-Type: application/json
+Content-Length: 290
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8.1)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"title": "Perro",
+"postPhoto": "https://example.com/photo.jpg",
+"description": "Que alguien me cuide al perro",
+"serviceType": "Paseo",
+"serviceTime": "00:00 - 10:00",
+"postDate": "2024-02-16",
+"reward": "1000€",
+"location": "Badalona"
+}
+
+###
+
 GET http://localhost:8080/posts
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)

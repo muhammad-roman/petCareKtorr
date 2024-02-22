@@ -8,7 +8,7 @@ object PostRow: Table(name = "posts"){
     val reciver = integer(name = "reciver_id")
     val offers = varchar(name = "offer_name", length = 250)
     val tittle = varchar(name = "tittle_post", length = 30)
-    val postPhoto = varchar(name = "photo_post", length = 50)
+    val postPhoto = varchar(name = "photo_post", length = 500)
     val description = text(name = "description_post").default(
         defaultValue = "Hey, What's up ? Look this new offer"
     )

@@ -17,40 +17,40 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8080/posts
+POST http://192.168.1.68:8080/posts
 Content-Type: application/json
 
 {
-"owner": "",
-"var reciver": "",
-"var offers":  "" ,
-"title": "Nuevo post",
-"postPhoto": "https://example.com/photo.jpg",
-"description": "Descripción del nuevo post",
-"serviceType": "Tipo de servicio",
-"serviceTime": "Tiempo de servicio",
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"tittle": "Perro2",
+"postPhoto": "https://acortar.link/TYEvTw",
+"description": "Que alguien me cuide al perro",
+"serviceType": "Paseo",
+"serviceTime": "00:00 - 10:00",
 "postDate": "2024-02-16",
-"reward": "Recompensa",
-"location": "Ubicación del post"
+"reward": "1000€",
+"location": "Barcelona"
 }
 
 ###
 GET http://localhost:8080/posts
 
 ###
-PUT http://localhost:8080/posts
+PUT http://192.168.1.68:8080/posts/4
 Content-Type: application/json
 
 {
-  "owner": "Carlos",
-  "var reciver": "",
-  "var offers":  "" ,
-  "title": "Nuevo post",
-  "postPhoto": "https://example.com/photo.jpg",
-  "description": "Descripción del nuevo post",
-  "serviceType": "Tipo de servicio",
-  "serviceTime": "Tiempo de servicio",
+  "owner": 0,
+  "reciver": 1,
+  "offers":  "14" ,
+  "tittle": "Gato",
+  "postPhoto": "https://acortar.link/g7gi5i",
+  "description": "Que alguien me cuide al gato",
+  "serviceType": "Paseo",
+  "serviceTime": "00:00 - 10:00",
   "postDate": "2024-02-16",
-  "reward": "Recompensa",
-  "location": "Ubicación del post"
+  "reward": "1000€",
+  "location": "Barcelona"
 }

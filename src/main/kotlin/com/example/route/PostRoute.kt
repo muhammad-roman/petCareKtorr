@@ -2,13 +2,17 @@ package com.example.route
 
 import com.example.dao.post.PostDao
 import com.example.dao.post.dao
+import com.example.dao.post.daoPostUsuario
 import com.example.model.*
+import com.google.gson.Gson
 import io.ktor.http.*
+import io.ktor.http.content.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import kotlinx.serialization.SerializationException
+import java.io.File
 
 
 fun Routing.postRoute(dao: PostDao) {
@@ -17,6 +21,19 @@ fun Routing.postRoute(dao: PostDao) {
             val posts = dao.allPosts()
             call.respond(posts)
         }
+
+        get("/imagenes/{postPhoto?}") {
+            val imageName = call.parameters["postPhoto"]
+            println(imageName)
+            val file = File("./images/$imageName")
+            println(file)
+            if (file.exists()) {
+                call.respondFile(File("./images/$imageName"))
+            } else {
+                call.respondText("Image not found", status = HttpStatusCode.NotFound)
+            }
+        }
+
         get("/{postId}") {
             val postId = call.parameters["postId"]?.toIntOrNull()
             if (postId == null) {
@@ -30,6 +47,24 @@ fun Routing.postRoute(dao: PostDao) {
                 }
             }
         }
+
+        get("/{tittle?}") {
+            val name = call.parameters["tittle"] ?: return@get call.respondText(
+                "Missing title",
+                status = HttpStatusCode.BadRequest
+            )
+            val tesoros = dao.allPosts() ?: return@get call.respondText(
+                "No hay tesoros con el nombre $name",
+                status = HttpStatusCode.NotFound
+            )
+            val tesorosRespond = mutableListOf<Post>()
+            for (i in tesoros) {
+                if (name in i.tittle) {
+                    tesorosRespond.add(i)
+                }
+            }
+        }
+
         post {
             val post = try {
                 call.receive<Post>()
@@ -56,6 +91,7 @@ fun Routing.postRoute(dao: PostDao) {
                 call.respond(addedPost)
             }
         }
+
         put("/{postId}") {
             val postId = call.parameters["postId"]?.toIntOrNull()
             if (postId == null) {
@@ -100,6 +136,7 @@ fun Routing.postRoute(dao: PostDao) {
         }
     }
 }
+
 
 
 /*
@@ -213,6 +250,9 @@ fun Route.postRoute() {
                 val postToPost = post?.let { it1 ->
                     dao.addNewPost(
                         it1.tittle,
+                        post!!.owner,
+                        post!!.reciver,
+                        post!!.offers,
                         post!!.postPhoto,
                         post!!.description,
                         post!!.serviceType,
@@ -274,9 +314,9 @@ fun Route.postRoute() {
                 }
                 if (fileUpdated) {
                     post =
-                        Post(id.toInt(),"","","", titulo, fileName, descripcion, tipoServicio, tiempoServicio, fechaPost, recompensa, localizacion)
+                        Post(id.toInt(),0,1,"", titulo, fileName, descripcion, tipoServicio, tiempoServicio, fechaPost, recompensa, localizacion)
                 } else {
-                    post = Post(id.toInt(),"","","", titulo, foto,descripcion, tipoServicio, tiempoServicio, fechaPost, recompensa, localizacion)
+                    post = Post(id.toInt(),0,1,"", titulo, foto,descripcion, tipoServicio, tiempoServicio, fechaPost, recompensa, localizacion)
                 }
                 dao.editPost(
                     id.toInt(),
@@ -334,6 +374,8 @@ fun Route.postRoute() {
 }
 
  */
+
+
 
 
 
