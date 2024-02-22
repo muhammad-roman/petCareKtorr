@@ -1,3 +1,53 @@
+POST http://172.23.6.128:8080/posts
+Content-Type: application/json
+Content-Length: 305
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"tittle": "Perro con pulgas",
+"postPhoto": "https://acortar.link/TYEvTw",
+"description": "Que alguien me bañe al perro",
+"serviceType": "Peluqueria",
+"serviceTime": "08:00 - 10:00",
+"postDate": "2024-02-16",
+"reward": "100€",
+"location": "Barcelona"
+}
+
+<> 2024-02-22T162027.200.json
+
+###
+
+POST http://172.23.6.128:8080/posts
+Content-Type: application/json
+Content-Length: 305
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"tittle": "Perro con pulgas",
+"postPhoto": "https://acortar.link/TYEvTw",
+"description": "Que alguien me bañe al perro",
+"serviceType": "Peluqueria",
+"serviceTime": "08:00 - 10:00",
+"postDate": "2024-02-16",
+"reward": "100€",
+"location": "Barcelona"
+}
+
+<> 2024-02-22T161934.200.json
+
+###
+
 PUT http://192.168.1.68:8080/posts/4
 Content-Type: application/json
 Content-Length: 305
@@ -357,6 +407,249 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 
 ###
 
+POST http://172.23.6.128:8080/posts
+Content-Type: application/json
+Content-Length: 391
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 1,
+"reciver": 2,
+"offers": "Nadie" ,
+  "tittle": "Busco cuidador de perro",
+  "postPhoto": "https://acortar.link/LTHOYQ",
+  "description": "Necesito que alguien me cuide a mi querido Blacky mientras yo estoy fuera viendo el Barça / Madrid",
+  "serviceType": "Cuidado",
+  "serviceTime": "20:00 - 21:00",
+  "postDate": "16-02-2024",
+  "reward": "15€",
+  "location": "Barcelona"
+}
+
+<> 2024-02-22T154549.200.json
+
+###
+
+PUT http://172.23.6.128:8080/posts/3
+Content-Type: application/json
+Content-Length: 315
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "owner": 1,
+  "reciver": 2,
+  "offers":  "" ,
+  "title": "4 PERROS EN VENTA",
+  "postPhoto": "https://example.com/photo.jpg",
+  "description": "Descripción del nuevo post",
+  "serviceType": "Paseo",
+  "serviceTime": "20:00 - 21:00",
+  "postDate": "2024-02-16",
+  "reward": "5000€",
+  "location": "Badalona"
+}
+
+<> 2024-02-22T154544.500.txt
+
+###
+
+DELETE http://172.23.6.128:8080/posts/8
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-22T154538.200.txt
+
+###
+
+POST http://172.23.6.128:8080/posts
+Content-Type: application/json
+Content-Length: 390
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 1,
+"reciver": 2,
+"offers": "Nadie" ,
+  "title": "Busco cuidador de perro",
+  "postPhoto": "https://acortar.link/LTHOYQ",
+  "description": "Necesito que alguien me cuide a mi querido Blacky mientras yo estoy fuera viendo el Barça / Madrid",
+  "serviceType": "Cuidado",
+  "serviceTime": "20:00 - 21:00",
+  "postDate": "16-02-2024",
+  "reward": "15€",
+  "location": "Barcelona"
+}
+
+<> 2024-02-22T154426.200.json
+
+###
+
+DELETE http://172.23.6.128:8080/posts/6
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-22T153937.200.txt
+
+###
+
+DELETE http://172.23.6.128:8080/posts/5
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-22T153934.200.txt
+
+###
+
+DELETE http://172.23.6.128:8080/posts/4
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-22T153930.200.txt
+
+###
+
+DELETE http://172.23.6.128:8080/posts/3
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-22T153926.200.txt
+
+###
+
+DELETE http://172.23.6.128:8080/posts/2
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-22T153920.200.txt
+
+###
+
+DELETE http://172.23.6.128:8080/posts/1
+Content-Type: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-22T153908.200.txt
+
+###
+
+PUT http://172.23.6.128:8080/posts/3
+Content-Type: application/json
+Content-Length: 315
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "owner": 1,
+  "reciver": 2,
+  "offers":  "" ,
+  "title": "4 PERROS EN VENTA",
+  "postPhoto": "https://example.com/photo.jpg",
+  "description": "Descripción del nuevo post",
+  "serviceType": "Paseo",
+  "serviceTime": "20:00 - 21:00",
+  "postDate": "2024-02-16",
+  "reward": "5000€",
+  "location": "Badalona"
+}
+
+<> 2024-02-20T185620.200.txt
+
+###
+
+POST http://172.23.6.128:8080/posts
+Content-Type: application/json
+Content-Length: 314
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 4,
+"reciver": 5,
+"offers": "Nadie" ,
+  "title": "4 PERROS EN VENTA",
+  "postPhoto": "https://example.com/photo.jpg",
+  "description": "Descripción del nuevo post",
+  "serviceType": "Paseo",
+  "serviceTime": "20:00 - 21:00",
+  "postDate": "2024-02-16",
+  "reward": "1000€",
+  "location": "Barcelona"
+}
+
+<> 2024-02-20T185155.200.json
+
+###
+
+PUT http://172.23.6.128:8080/posts
+Content-Type: application/json
+Content-Length: 316
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "owner": 1,
+  "reciver": 2,
+  "offers":  "" ,
+  "title": "4 PERROS EN VENTA",
+  "postPhoto": "https://example.com/photo.jpg",
+  "description": "Descripción del nuevo post",
+  "serviceType": "Paseo",
+  "serviceTime": "20:00 - 21:00",
+  "postDate": "2024-02-16",
+  "reward": "1000€",
+  "location": "Barcelona"
+}
+
+###
+
+POST http://172.23.6.128:8080/posts
+Content-Type: application/json
+Content-Length: 321
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 1,
+"reciver": 2,
+"offers":  "Nadie" ,
+"title": "Nuevo post",
+"postPhoto": "https://example.com/photo.jpg",
+"description": "Descripción del nuevo post",
+"serviceType": "Tipo de servicio",
+"serviceTime": "Tiempo de servicio",
+"postDate": "2024-02-16",
+"reward": "Recompensa",
+"location": "Ubicación del post"
+}
+
+<> 2024-02-20T164845.200.json
+
+###
+
 GET http://localhost:8080/posts
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
@@ -689,132 +982,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2024-02-01T164141.200.json
-
-###
-
-POST http://localhost:8080/signup
-Content-Type: application/json
-Content-Length: 99
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-   "name": "carlos",
-   "email": "carlos.olivera.7e6@itb.cat",
-   "password": "carlospasssword"
-}
-
-###
-
-POST http://localhost:8080/login
-Content-Type: application/json
-Content-Length: 70
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-"email": "carlos.olivera.7e6@itb.cat",
-"password": "carlossssword"
-}
-
-<> 2024-01-30T160348.403.json
-
-###
-
-POST http://localhost:8080/login
-Content-Type: application/json
-Content-Length: 72
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-"email": "carlos.olivera.7e6@itb.cat",
-"password": "carlospasssword"
-}
-
-<> 2024-01-30T160314.200.json
-
-###
-
-GET http://localhost:8080/login
-Content-Type: application/json
-Content-Length: 72
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-"email": "carlos.olivera.7e6@itb.cat",
-"password": "carlospasssword"
-}
-
-###
-
-POST http://localhost:8080/signup
-Content-Type: application/json
-Content-Length: 99
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-   "name": "carlos",
-   "email": "carlos.olivera.7e6@itb.cat",
-   "password": "carlospasssword"
-}
-
-<> 2024-01-30T160232.409.json
-
-###
-
-GET http://localhost:8080/login
-Content-Type: application/json
-Content-Length: 72
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-"email": "carlos.olivera.7e6@itb.cat",
-"password": "carlospasssword"
-}
-
-###
-
-POST http://localhost:8080/signup
-Content-Type: application/json
-Content-Length: 99
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-   "name": "carlos",
-   "email": "carlos.olivera.7e6@itb.cat",
-   "password": "carlospasssword"
-}
-
-<> 2024-01-30T160059.409.json
-
-###
-
-POST http://localhost:8080/signup
-Content-Type: application/json
-Content-Length: 99
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-   "name": "carlos",
-   "email": "carlos.olivera.7e6@itb.cat",
-   "password": "carlospasssword"
-}
-
-<> 2024-01-30T155918.200.json
 
 ###
 
