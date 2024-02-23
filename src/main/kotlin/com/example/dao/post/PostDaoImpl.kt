@@ -11,10 +11,10 @@ class PostDaoImpl: PostDao {
 
     private fun resultRowToPost(row: ResultRow) = Post(
         postId = row[PostRow.postId],
+        tittle = row[PostRow.tittle],
         owner = row[PostRow.owner],
         reciver = row[PostRow.reciver],
         offers = row[PostRow.offers],
-        tittle = row[PostRow.tittle],
         postPhoto = row[PostRow.postPhoto],
         description = row[PostRow.description],
         serviceType = row[PostRow.serviceType],
@@ -41,10 +41,10 @@ class PostDaoImpl: PostDao {
     }
 
     override suspend fun addNewPost(
+        tittle: String,
         owner: Int,
         reciver: Int,
         offers: String,
-        tittle: String,
         postPhoto: String,
         description: String,
         serviceType: String,
@@ -54,10 +54,10 @@ class PostDaoImpl: PostDao {
         location: String
     ): Post? = dbQuery {
         val insertStatement = PostRow.insert {
+            it[PostRow.tittle] = tittle
             it[PostRow.owner] = owner
             it[PostRow.reciver] = reciver
             it[PostRow.offers] = offers
-            it[PostRow.tittle] = tittle
             it[PostRow.postPhoto] = postPhoto
             it[PostRow.description] = description
             it[PostRow.serviceType] = serviceType
@@ -103,7 +103,7 @@ class PostDaoImpl: PostDao {
 val dao: PostDao = PostDaoImpl().apply {
     runBlocking {
         if(allPosts().isEmpty()) {
-            addNewPost(1,2,"14","Post de relleno", "image.png", "No descripcion...", "Sin servicio", "0h", "00/00/0000","1000","Barcelona" )
+            addNewPost("Post de relleno",1,2,"14", "https://acortar.link/TYEvTw", "No descripcion...", "Sin servicio", "0h", "00/00/0000","1000","Barcelona" )
         }
     }
 }

@@ -3,11 +3,11 @@ import kotlinx.serialization.Serializable
 import org.jetbrains.exposed.sql.Table
 
 object PostRow: Table(name = "posts"){
+    val tittle = varchar(name = "tittle_post", length = 30)
     val postId = integer(name = "post_id").autoIncrement()
     val owner = integer(name = "owner_id")
     val reciver = integer(name = "reciver_id")
     val offers = varchar(name = "offer_name", length = 250)
-    val tittle = varchar(name = "tittle_post", length = 30)
     val postPhoto = varchar(name = "photo_post", length = 500)
     val description = text(name = "description_post").default(
         defaultValue = "Hey, What's up ? Look this new offer"
@@ -26,10 +26,10 @@ object PostRow: Table(name = "posts"){
 @Serializable
 data class Post(
     var postId: Int = 0,
+    var tittle: String = "",
     var owner: Int = 0,
     var reciver: Int = 0,
     var offers: String = "",
-    var tittle: String = "",
     var postPhoto: String = "",
     var description: String = "",
     var serviceType: String = "",
