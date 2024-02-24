@@ -30,7 +30,7 @@
 - IntelliJ IDEA Ultimate
 - Git
 
-## Instalación :hammer:
+## Instalación 
 
 - `Paso 1`: Ve a la pagina: https://www.jetbrains.com/idea/
 - `Paso 2`: Descarga IntelliJ IDEA Ultimate en la version acorde a tu sistema operativo
