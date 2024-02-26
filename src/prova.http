@@ -17,20 +17,21 @@ Content-Type: application/json
 }
 
 ###
-POST http://172.23.6.128:8080/posts
+POST http://192.168.1.140:8080/posts
+
 Content-Type: application/json
 
 {
 "owner": 0,
 "reciver": 1,
 "offers":  "Ninguna" ,
-"tittle": "Perro con pulgas",
+"tittle": "Perro2",
 "postPhoto": "https://acortar.link/TYEvTw",
-"description": "Que alguien me bañe al perro",
-"serviceType": "Peluqueria",
-"serviceTime": "08:00 - 10:00",
+"description": "Que alguien me cuide al perro",
+"serviceType": "Paseo",
+"serviceTime": "00:00 - 10:00",
 "postDate": "2024-02-16",
-"reward": "100€",
+"reward": "1000€",
 "location": "Barcelona"
 }
 
@@ -38,7 +39,7 @@ Content-Type: application/json
 GET http://localhost:8080/posts
 
 ###
-PUT http://172.23.6.128:8080/posts/3
+PUT http://192.168.1.140:8080/posts/4
 Content-Type: application/json
 
 {
@@ -54,9 +55,3 @@ Content-Type: application/json
   "reward": "1000€",
   "location": "Barcelona"
 }
-
-###
-DELETE http://172.23.6.128:8080/posts/8
-Content-Type: application/json
-
-

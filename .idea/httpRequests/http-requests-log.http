@@ -48,6 +48,56 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 
 ###
 
+POST http://172.30.5.14:8080/posts
+Content-Type: application/json
+Content-Length: 291
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"owner": 0,
+"reciver": 1,
+"offers":  "Ninguna" ,
+"tittle": "Perro2",
+"postPhoto": "https://acortar.link/TYEvTw",
+"description": "Que alguien me cuide al perro",
+"serviceType": "Paseo",
+"serviceTime": "00:00 - 10:00",
+"postDate": "2024-02-16",
+"reward": "1000€",
+"location": "Barcelona"
+}
+
+<> 2024-02-22T160641.200.json
+
+###
+
+PUT http://172.30.5.14:8080/posts/4
+Content-Type: application/json
+Content-Length: 305
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "owner": 0,
+  "reciver": 1,
+  "offers":  "14" ,
+  "tittle": "Gato",
+  "postPhoto": "https://acortar.link/g7gi5i",
+  "description": "Que alguien me cuide al gato",
+  "serviceType": "Paseo",
+  "serviceTime": "00:00 - 10:00",
+  "postDate": "2024-02-16",
+  "reward": "1000€",
+  "location": "Barcelona"
+}
+
+<> 2024-02-22T160631.500.txt
+
+###
+
 PUT http://192.168.1.68:8080/posts/4
 Content-Type: application/json
 Content-Length: 305
